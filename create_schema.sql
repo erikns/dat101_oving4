@@ -43,12 +43,18 @@ CREATE TABLE stevne.utover (
 
 -- opprett referanse fra banerekord.ovelse til ovelse.navn
 ALTER TABLE stevne.banerekord
-    ADD FOREIGN KEY (ovelse) REFERENCES stevne.ovelse (navn);
+    ADD FOREIGN KEY (ovelse) REFERENCES stevne.ovelse (navn)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT;
 
 ALTER TABLE stevne.deltakelse
-    ADD FOREIGN KEY (ovelse) REFERENCES stevne.ovelse (navn);
+    ADD FOREIGN KEY (ovelse) REFERENCES stevne.ovelse (navn)
+    ON UPDATE RESTRICT
+    ON DELETE RESTRICT;
 
 ALTER TABLE stevne.deltakelse
-    ADD FOREIGN KEY (utover) REFERENCES stevne.utover (startnr);
+    ADD FOREIGN KEY (utover) REFERENCES stevne.utover (startnr)
+    ON DELETE RESTRICT
+    ON UPDATE RESTRICT;
 
 
