@@ -47,11 +47,13 @@ ALTER TABLE stevne.banerekord
     ON DELETE RESTRICT
     ON UPDATE RESTRICT;
 
+-- opprett referanse fra deltakelse.ovelse til ovelse.navn
 ALTER TABLE stevne.deltakelse
     ADD FOREIGN KEY (ovelse) REFERENCES stevne.ovelse (navn)
     ON UPDATE RESTRICT
     ON DELETE RESTRICT;
 
+-- opprett referanse fra deltakelse.utover til utover.startnr
 ALTER TABLE stevne.deltakelse
     ADD FOREIGN KEY (utover) REFERENCES stevne.utover (startnr)
     ON DELETE RESTRICT
