@@ -24,7 +24,7 @@ INTERSECT
 SELECT utover.startnr, utover.navn FROM utover 
     INNER JOIN deltakelse ON (deltakelse.utover = utover.startnr)
     INNER JOIN ovelse ON (ovelse.navn = deltakelse.ovelse)
-    WHERE disiplin = 'lø';
+    WHERE disiplin = 'løp';
 
 /*
 -- Oppgave e) - startnr, navn, med i alle kasteøvelser
