@@ -26,13 +26,16 @@ SELECT utover.startnr, utover.navn FROM utover
     INNER JOIN ovelse ON (ovelse.navn = deltakelse.ovelse)
     WHERE disiplin = 'løp';
 
-/*
 -- Oppgave e) - startnr, navn, med i alle kasteøvelser
-SELECT utover.startnr, utover.navn FROM utover
-    INNER JOIN deltakelse ON (deltakelse.utover = utover.startnr)
-    INNER JOIN ovelse ON (ovelse.navn = deltakelse.ovelse)
-    WHERE 
-*/
+SELECT utover.startnr,utover.navn FROM utover 
+    INNER JOIN deltakelse ON (utover.startnr = deltakelse.utover)
+    INNER JOIN ovelse ON (deltakelse.ovelse = ovelse.navn)
+    WHERE ovelse.navn = 'Slegge'
+INTERSECT
+SELECT utover.startnr,utover.navn FROM utover 
+    INNER JOIN deltakelse ON (utover.startnr = deltakelse.utover)
+    INNER JOIN ovelse ON (deltakelse.ovelse = ovelse.navn)
+    WHERE ovelse.navn = 'Spydkast';
 
 -- Oppgave f) - resultat, navn, vinner i spydkast
 SELECT utover.navn,resultat FROM deltakelse
