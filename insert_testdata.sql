@@ -63,7 +63,3 @@ INSERT INTO deltakelse (ovelse, utover, resultat)
     ('Lengdehopp', 4, 7.85),
     ('Lengdehopp', 6, 8.25);
 
-
-
-
-
