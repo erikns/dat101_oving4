@@ -1,0 +1,40 @@
+-> a)
+   ovelse   | resultat 
+------------+----------
+ 100m       |      9.9
+ Lengdehopp |      8.0
+(2 rows)
+
+-> b)
+   navn    
+-----------
+ 100m Hekk
+ Spydkast
+ Slegge
+(3 rows)
+
+-> c)
+ resultat 
+----------
+       93
+(1 row)
+
+-> d)
+ startnr |    navn     
+---------+-------------
+       6 | John Smith
+       5 | Hans Hansen
+(2 rows)
+
+-> e)
+ startnr |      navn       
+---------+-----------------
+       7 | Jöran Björnsson
+(1 row)
+
+-> f)
+      navn       | resultat 
+-----------------+----------
+ Jöran Björnsson |     96.0
+(1 row)
+
