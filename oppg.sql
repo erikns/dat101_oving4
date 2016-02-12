@@ -12,7 +12,7 @@ SELECT navn FROM ovelse,banerekord
 -- Oppgave c) - res Vedbjørn Rodal 800m
 SELECT resultat FROM deltakelse
     INNER JOIN utover ON (deltakelse.utover = utover.startnr)
-    WHERE utover.navn = 'Vedbjørn Rodal'
+    WHERE utover.navn = 'Vebjørn Rodal'
         AND deltakelse.ovelse = '800m';
 
 -- Oppgave d) - startnr og navn på utøvere som deltar i løp og sprang

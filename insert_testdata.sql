@@ -9,7 +9,7 @@ DELETE FROM ovelse;
 -- sett inn testdata i utover tabell
 INSERT INTO utover (startnr, navn, nasjonalitet)
     VALUES
-    (1, 'Vedbjørn Rodal', 'Norge'),
+    (1, 'Vebjørn Rodal', 'Norge'),
     (2, 'Marion Jones', 'USA'),
     (3, 'Hussain Bolt', 'USA'),
     (4, 'Hanne Haugland', 'Norge'),
